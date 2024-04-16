@@ -6,7 +6,7 @@ jobs:
     steps:
       - name: Display working directory & shells
         run: |
-          cwd
+          cd
           dir
           echo $GITHUB_SHA
           echo $GITHUB_REPOSITORY
