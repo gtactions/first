@@ -1,0 +1,18 @@
+name: working dirs & shells
+on: [push]
+jobs:
+  display-wd-info:
+    runs-on: windows-latest
+      run: |
+        cwd
+        dir
+        echo $GITHUB_SHA
+        echo $GITHUB_REPOSITORY
+  display-wd-info:
+    runs-on: windows-latest
+      run: |
+        cwd
+        dir
+        echo $GITHUB_SHA
+        echo $GITHUB_REPOSITORY
+        
