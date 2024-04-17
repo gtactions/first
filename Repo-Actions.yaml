@@ -1,0 +1,12 @@
+name: Repo-Actions
+on: [push,pull_requst,issues]
+
+jobs:
+  checkout-test:
+    runs-on: ubuntu-latest
+    steps:
+      - run:
+          echo $GITHUB_SHA
+          echo $GITHUB_REF
+      - uses: checkout@v3
+          
